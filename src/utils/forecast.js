@@ -23,5 +23,5 @@ request({url:forecasturl,json:true},(error,{body})=>{
 })
 }
 module.exports=forecast
-// latitude:37.8267
-// longitude:-122.4233
+ latitude:37.8267
+longitude:-122.4233
