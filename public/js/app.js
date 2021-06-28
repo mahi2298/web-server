@@ -1,5 +1,5 @@
 //const fetch=require('node-fetch')
-
+console.log('client side javascript is loaded')
 /*fetch('http://puzzle.mead.io/puzzle').then((response)=>{
     response.json().then((data)=>{
         console.log(data)
@@ -28,7 +28,7 @@ e.preventDefault()
     const location=search.value
     messageone.textContent='Loading..'
     messagetwo.textContent=''
-    fetch('http://localhost:5000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
         response.json().then((data)=>{
             if(data.error)
             {

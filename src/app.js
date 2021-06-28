@@ -7,6 +7,7 @@ const forecast = require('./utils/forecast')
 //const { response } = require('express')
 const request=require('request')
 const app=express()
+const port=process.env.PORT || 3000
 //to setup paths
 const pathdirectory=path.join(__dirname,'../public')
 const viewsdirectory=path.join(__dirname,'../templates/views')
@@ -91,8 +92,8 @@ geocode(req.query.address,(error,{latitude,longitude,location})=>{
         address:req.query.address
     })*/
 })
-app.listen(5000,()=>{
-    console.log('Server is Starting up and Running 3000')
+app.listen(port,()=>{
+    console.log('Server is Starting up and Running '+port)
 })
 // app.listen(3000,()=>{
 //     console.log('Server is starting up 3000')
